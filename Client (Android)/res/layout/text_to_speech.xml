@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="right"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+
+    
+
+<!--  
+    <Button
+        android1:id="@+id/Button02"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/button1"
+        android1:layout_alignRight="@+id/Button01"
+        android1:layout_below="@+id/button1"
+        android1:layout_marginTop="30dp"
+        android1:onClick="goToPrefs"
+        android1:text="Settings"
+        android1:textSize="30sp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="175dp"
+        android:drawableLeft="@drawable/ic_menu_close_clear_cancel"
+        android:onClick="stopSpeech"
+        android:text="Stop Speech"
+        android:textSize="30sp" />-->
+    
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/start" >
+
+
+<TextView
+    android:id="@+id/tts_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:padding="20dp"
+    android:text="TextView" />
+</ScrollView>
+
+<Button
+    android:id="@+id/start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="10dp"
+    android:onClick="startSpeech"
+    android:text="Start"
+    android:textSize="30sp" />
+
+
+</RelativeLayout>

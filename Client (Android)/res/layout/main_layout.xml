@@ -1,0 +1,63 @@
+<ScrollView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/camera"
+        android:focusable="true"
+        android:nextFocusDown="@+id/gallery"
+        android:contentDescription="@string/cont_desc_take_photo_butt"
+        android:drawableLeft="@drawable/ic_menu_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:onClick="goToCamera"
+        android:text="@string/text_butt_take_photo"
+        android:textSize="30sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/camera"
+        android:layout_alignRight="@+id/camera"
+        android:layout_below="@+id/camera"
+        android:layout_marginTop="34dp"
+        android:contentDescription="@string/cont_desc_gallery_butt"
+        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:focusable="true"
+        android:nextFocusDown="@+id/help"
+        android:onClick="goGallery"
+        android:text="@string/text_butt_gallery"
+        android:textSize="30sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gallery"
+        android:layout_alignRight="@+id/gallery"
+        android:layout_below="@+id/gallery"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/cont_desc_help_butt"
+        android:focusable="true"
+        android:onClick="goHelp"
+        android:drawableLeft="@drawable/ic_menu_help"
+        android:text="Help"
+        android:textSize="30sp"
+        android:typeface="sans" />
+
+</RelativeLayout>
+</ScrollView>

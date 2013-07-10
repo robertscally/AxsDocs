@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <item android:id="@+id/home"
+          android:icon="@drawable/ic_menu_home"
+          android:title="@string/menu_option_home"/>
+        
+         <item android:id="@+id/text_size"
+              android:icon="@drawable/btn_plus_disable"
+              android:title="Text Size"
+               />
+         
+         <item android:id="@+id/colour"
+              android:icon="@drawable/ic_menu_chat_dashboard"
+              android:title="Set Colours"
+               />
+         
+         <item android:id="@+id/font_face"
+              android:icon="@drawable/ic_menu_sort_alphabetically"
+              android:title="Font Style"
+               />
+         
+         <item android:id="@+id/text_to_speech"
+              android:icon="@drawable/ic_lock_silent_mode_off"
+              android:title="Text-to-Speech"
+               />
+         
+         <item android:id="@+id/help"
+              android:icon="@drawable/ic_menu_help"
+              android:title="@string/menu_option_help"
+               />
+         
+    </menu>

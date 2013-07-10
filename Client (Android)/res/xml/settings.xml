@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+        <!--  <PreferenceScreen
+            android:title="Text"
+            >-->
+    <PreferenceCategory 
+        android:title="Text"
+        android:key="pref_text_settings">
+        
+            
+             <CheckBoxPreference
+            	android:title="Bold"
+            	android:summary="All text is bold"
+            	android:key="boldTextPref"
+            	android:persistent="true"
+     			android:defaultValue="false"
+            	/>
+             </PreferenceCategory>
+             <!--  
+        </PreferenceScreen>
+         
+        <PreferenceScreen
+            android:title="Text to Speech"
+            android:key="tts_screen_key"
+            >-->
+        <PreferenceCategory 
+        android:title="Text to Speech"
+        android:key="pref_tts_settings">
+             
+        <ListPreference
+            	android:title="Voice"
+            	android:key="voicePref"
+            	android:summary="Voice type for text to speech"
+            	android:persistent="true"
+            	android:defaultValue="us"
+            	android:entries="@array/voiceNames"
+            	android:entryValues="@array/voiceValues"
+            	/>
+        
+        <ListPreference
+            	android:title="Speech Rate"
+            	android:summary="Sets text to speech rate"
+            	android:key="speechRatePref"
+            	android:defaultValue="1.0"
+            	android:persistent="true"
+            	android:entries="@array/speechRateNames"
+            	android:entryValues="@array/speechRateValues"
+            	/>
+        </PreferenceCategory>
+        
+        <PreferenceCategory 
+        android:title="Application"
+        android:key="pref_app_settings">
+             
+            <CheckBoxPreference
+            	android:title="Colour Change"
+            	android:summary="Swipe to change"
+            	android:key="appSwipePref"
+            	android:persistent="true"
+     			android:defaultValue="false"
+            	/>
+            
+        </PreferenceCategory>
+        <!-- 
+        </PreferenceScreen>-->
+ 
+</PreferenceScreen>

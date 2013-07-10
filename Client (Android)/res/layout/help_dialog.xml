@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="Help"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press the menu button on your phone to see more options"
+        android:textSize="30dp" />
+    -->
+
+    <TextSwitcher
+        android:id="@+id/textSwitcher1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TextSwitcher>
+
+</LinearLayout>

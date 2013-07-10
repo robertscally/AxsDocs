@@ -1,0 +1,53 @@
+------------------------------------------
+|        How to set up project           |
+------------------------------------------
+
+Robert Scally Final Year Project Setup
+
+
+Install Android onto phone
+-----------------------------------------------------------
+1. Copy the RobertScallyFYPapp.apk to your phone
+2. Ensure "Unknown sources" can be installed in the
+   developer settings on the android phone.
+3. Navigate to the .apk file on your phone.
+4. Press to open.
+5. The app should now be installed on your phone.
+
+
+Setup Client (Android)
+-----------------------------------------------------------
+1. Open eclipse (with Android SDK and plugin installed)
+2. Go to File > Import
+3. Select "Existing Projects into Workspace"
+4. Click the next button
+5. Browse to the directory which contains the project in it
+6. Click Finish
+7. The project will now be loaded into the workspace
+8. Change the address of the server in the code to match 
+   your server address.
+9. The client should now be set up.
+
+
+Setup Server
+-----------------------------------------------------------
+1. Access your server running Linux (preferably Ubuntu 12.04)
+2. Place the folder "server_setup" in the /var/www directory
+3. Ensure your current directory is /var/www/server_setup
+4. Run the command: sudo sh setupserver.sh
+5. Wait for it to complete, it may take a few minutes
+6. To see if it has worked visit website which the server is 
+   running on. i.e. myprojectserver.com/ocrserver/
+7. To test if the server is working, there is a sample file
+   upload form which can be found by visiting
+		myprojectserver.com/ocrserver/uploadForm.php
+8. The server should now be set up. 
+
+============ VERY IMPORTANT STEP ==============
+9. To let the Android app know the server address. You need to
+   enter the IP of your server in the URL:
+	www1.robertscally.me/dynserver.php?ip=YOUR_SERVER_IP_GOES_HERE
+   
+   example:
+        www1.robertscally.me/dynserver.php?ip=192.168.1.5
+
